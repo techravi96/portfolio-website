@@ -8,7 +8,16 @@ const contactItems = [
     value: "ravikunal007@gmail.com",
     href: "mailto:ravikunal007@gmail.com",
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <rect x="2" y="4" width="20" height="16" rx="2" />
         <path d="M2 7l10 7 10-7" />
       </svg>
@@ -19,7 +28,16 @@ const contactItems = [
     value: "+91 705335 3475",
     href: "tel:+917053353475",
     icon: (
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
       </svg>
     ),
@@ -40,7 +58,16 @@ const contactItems = [
 const statusItems = [
   {
     icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
         <circle cx="12" cy="9" r="2.5" />
       </svg>
@@ -49,7 +76,16 @@ const statusItems = [
   },
   {
     icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <rect x="2" y="7" width="20" height="14" rx="2" />
         <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
       </svg>
@@ -58,7 +94,16 @@ const statusItems = [
   },
   {
     icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
         <circle cx="12" cy="12" r="10" />
         <path d="M12 6v6l4 2" />
       </svg>
@@ -80,14 +125,16 @@ export default function Contact() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
- const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 30 },
-  animate: isInView ? { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }
-  } : {},
-});
+  const fadeUp = (delay = 0) => ({
+    initial: { opacity: 0, y: 30 },
+    animate: isInView
+      ? {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
+        }
+      : {},
+  });
   return (
     <>
       <section
@@ -98,44 +145,82 @@ export default function Contact() {
         {/* Glow */}
         <div
           className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full pointer-events-none opacity-20"
-          style={{ background: "radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%)" }}
+          style={{
+            background:
+              "radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%)",
+          }}
         />
 
         <div className="max-w-[1300px] mx-auto px-6 md:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
-
             {/* ── LEFT ── */}
             <div className="flex flex-col gap-8">
-
               {/* Heading */}
-              <motion.div {...fadeUp(0)}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.6,
+                  delay: 0,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
                 <p className="text-[#00D4FF] text-xs tracking-[0.3em] mb-3 font-mono">
                   GET IN TOUCH
                 </p>
                 <div className="leading-none font-display  tracking-tight">
-                  <h2 className="text-white" style={{ fontSize: "clamp(42px, 6vw, 90px)" }}>
+                  <h2
+                    className="text-white"
+                    style={{ fontSize: "clamp(42px, 6vw, 90px)" }}
+                  >
                     LET'S WORK
                   </h2>
-                  <h2 className="text-white/10" style={{ fontSize: "clamp(42px, 6vw, 90px)" }}>
+                  <h2
+                    className="text-white/10"
+                    style={{ fontSize: "clamp(42px, 6vw, 90px)" }}
+                  >
                     TOGETHER
                   </h2>
                 </div>
               </motion.div>
 
               {/* Bio */}
-              <motion.p {...fadeUp(0.1)} className="text-white/50 text-base leading-relaxed font-body max-w-md">
-                I'm actively looking for full-time roles and freelance projects in Noida / Delhi NCR.
-                If you have a project, an opportunity, or just want to say hi — I'd love to hear from you.
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.1,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="text-white/50 text-base leading-relaxed font-body max-w-md"
+              >
+                I'm actively looking for full-time roles and freelance projects
+                in Noida / Delhi NCR. If you have a project, an opportunity, or
+                just want to say hi — I'd love to hear from you.
               </motion.p>
 
               {/* Contact cards */}
-              <motion.div {...fadeUp(0.2)} className="flex flex-col gap-3">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.2,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="flex flex-col gap-3"
+              >
                 {contactItems.map((item) => (
                   <a
                     key={item.label}
                     href={item.href}
                     target={item.label === "LINKEDIN" ? "_blank" : undefined}
-                    rel={item.label === "LINKEDIN" ? "noopener noreferrer" : undefined}
+                    rel={
+                      item.label === "LINKEDIN"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="group flex items-center gap-5 border border-white/8 bg-[#111111] px-5 py-4 hover:border-[#00D4FF]/40 hover:bg-[#111111] transition-all duration-300"
                   >
                     {/* Icon box */}
@@ -152,7 +237,16 @@ export default function Contact() {
                     </div>
                     {/* Arrow */}
                     <div className="ml-auto text-white/10 group-hover:text-[#00D4FF] transition-colors duration-300">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
                         <path d="M7 17L17 7M17 7H7M17 7v10" />
                       </svg>
                     </div>
@@ -162,9 +256,13 @@ export default function Contact() {
             </div>
 
             {/* ── RIGHT — Status card ── */}
-            <motion.div {...fadeUp(0.25)} className="flex flex-col justify-center">
+           <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                className="flex flex-col justify-center"
+              >
               <div className="border border-white/10 bg-[#111111] p-8 flex flex-col gap-7 relative overflow-hidden">
-
                 {/* Top accent line */}
                 <div className="absolute top-0 left-0 w-20 h-px bg-[#00D4FF]" />
 
@@ -188,8 +286,8 @@ export default function Contact() {
 
                 {/* Description */}
                 <p className="text-white/50 text-sm leading-relaxed font-body">
-                  Looking for full-time Web Designer / Frontend Developer roles in
-                  Noida/Delhi NCR. Open to remote and hybrid opportunities.
+                  Looking for full-time Web Designer / Frontend Developer roles
+                  in Noida/Delhi NCR. Open to remote and hybrid opportunities.
                 </p>
 
                 {/* CTA button */}
@@ -198,7 +296,17 @@ export default function Contact() {
                   className="inline-flex items-center justify-between gap-4 bg-[#00D4FF] text-black font-bold text-[11px] tracking-[0.2em] px-6 py-4 font-mono hover:bg-white transition-all duration-300 group"
                 >
                   SEND ME A MESSAGE
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform duration-200">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="group-hover:translate-x-1 transition-transform duration-200"
+                  >
                     <path d="M5 12h14M14 5l7 7-7 7" />
                   </svg>
                 </a>
@@ -210,8 +318,12 @@ export default function Contact() {
                 <div className="flex flex-col gap-4">
                   {statusItems.map((item, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <span className="text-[#00D4FF] shrink-0">{item.icon}</span>
-                      <span className="text-white/55 text-sm font-body">{item.text}</span>
+                      <span className="text-[#00D4FF] shrink-0">
+                        {item.icon}
+                      </span>
+                      <span className="text-white/55 text-sm font-body">
+                        {item.text}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -224,7 +336,9 @@ export default function Contact() {
       {/* ── Footer ── */}
       <footer className="w-full bg-[#0a0a0a] border-t border-white/5 py-6 px-6 md:px-10 lg:px-16">
         <div className="max-w-[1300px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-[#00D4FF] font-black text-xl font-display">RK.</span>
+          <span className="text-[#00D4FF] font-black text-xl font-display">
+            RK.
+          </span>
           <p className="text-white/20 text-xs font-mono tracking-[0.15em]">
             © {new Date().getFullYear()} Ravi Kumar. ALL RIGHTS RESERVED.
           </p>
@@ -258,7 +372,16 @@ export default function Contact() {
             className="fixed bottom-6 right-6 z-50 w-12 h-12 flex items-center justify-center bg-[#00D4FF] text-black shadow-lg hover:bg-white hover:scale-110 transition-all duration-300"
             aria-label="Back to top"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="M12 19V5M5 12l7-7 7 7" />
             </svg>
           </motion.button>
