@@ -80,12 +80,14 @@ export default function Contact() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const fadeUp = (delay = 0): Variants => ({
-    initial: { opacity: 0, y: 30 },
-    animate: isInView ? { opacity: 1, y: 0 } : {},
-    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
-  });
-
+ const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 30 },
+  animate: isInView ? { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }
+  } : {},
+});
   return (
     <>
       <section
