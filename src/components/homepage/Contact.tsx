@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, useInView, AnimatePresence } from "motion/react";
-import type { Variants } from "motion/react";
 
 const contactItems = [
   {
