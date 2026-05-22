@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --font-display: 'Bebas Neue', sans-serif;
+--font-mono: 'Space Mono', monospace;
+--font-body: 'DM Sans', sans-serif; */
+
+.font-display {
+  font-family: "Bebas Neue", sans-serif;
+}
+.font-mono {
+  font-family: "Space Mono", monospace;
+}
+.font-body {
+  font-family: "DM Sans", sans-serif;
+}
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #00D4FF; border-radius: 2px; }
+.swiper-slide {
+  height: auto !important;
+}
