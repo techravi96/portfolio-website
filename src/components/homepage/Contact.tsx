@@ -4,8 +4,8 @@ import { motion, useInView, AnimatePresence } from "motion/react";
 const contactItems = [
   {
     label: "EMAIL",
-    value: "ravikunal007@gmail.com",
-    href: "mailto:ravikunal007@gmail.com",
+    value: "ravikumar791042@gmail.com",
+    href: "mailto:ravikumar791042@gmail.com",
     icon: (
       <svg
         width="18"

@@ -12,7 +12,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: "80+", label: "Projects Done" },
+  { value: "50+", label: "Projects Done" },
   { value: "5+", label: "Years Exp." },
   { value: "3", label: "Companies" },
 ];
@@ -80,7 +80,7 @@ export default function About() {
               transition={{ delay: 0.5, duration: 0.5, ease: "backOut" }}
               className="absolute -bottom-5 -right-5 bg-[#00D4FF] text-black px-6 py-4 z-20"
             >
-              <div className="text-4xl font-black leading-none font-display">80+</div>
+              <div className="text-4xl font-black leading-none font-display">50+</div>
               <div className="text-[10px] tracking-[0.2em] font-semibold mt-1 opacity-60 font-mono">
                 PROJECTS DONE
               </div>
