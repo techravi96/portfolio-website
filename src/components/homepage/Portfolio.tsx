@@ -44,12 +44,11 @@ const projects: Project[] = [
   { id: 9, name: "Genius Presentation", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: genius, liveUrl: "http://geniuspresentation.in/" },
   { id: 10, name: "China Casting", tags: ["HTML", "CSS", "JS", "Bootstrap", "Wordpress"], image: chinaCasting, liveUrl: "https://www.china-casting.biz/" },
   { id: 11, name: "Explicit Leathers", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: explicit, liveUrl: "http://explicitleathergroup.com/" },
-  { id: 12, name: "Step Cable", tags: ["HTML", "CSS", "JS", "Wordpress"], image: stepcable, liveUrl: "https://www.stepcable.com/" },
-  { id: 13, name: "UPSC Akhada", tags: ["HTML", "CSS", "Next.JS", "React-Bootstrap"], image: upsc, liveUrl: "#" },
-  { id: 14, name: "Step Cable", tags: ["HTML", "CSS", "JS", "Wordpress"], image: stepcable, liveUrl: "https://www.stepcable.com/" },
-  { id: 15, name: "The Gold Class", tags: ["HTML", "CSS", "JS", "Wordpress"], image: goldclass, liveUrl: "https://thegoldclass.com/" },
-  { id: 16, name: "Swiss Kombucha Company", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: swiss, liveUrl: "https://swisskombuchacompany.ch/" },
-  { id: 17, name: "Logihealth", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: logihealth, liveUrl: "https://logihealth.de/" },
+  { id: 12, name: "UPSC Akhada", tags: ["HTML", "CSS", "Next.JS", "React-Bootstrap"], image: upsc, liveUrl: "#" },
+  { id: 13, name: "Step Cable", tags: ["HTML", "CSS", "JS", "Wordpress"], image: stepcable, liveUrl: "https://www.stepcable.com/" },
+  { id: 14, name: "The Gold Class", tags: ["HTML", "CSS", "JS", "Wordpress"], image: goldclass, liveUrl: "https://thegoldclass.com/" },
+  { id: 15, name: "Swiss Kombucha Company", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: swiss, liveUrl: "https://swisskombuchacompany.ch/" },
+  { id: 16, name: "Logihealth", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: logihealth, liveUrl: "https://logihealth.de/" },
 ];
 
 const ArrowLeft = () => (
