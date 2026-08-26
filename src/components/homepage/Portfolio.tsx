@@ -18,6 +18,7 @@ import genius from "../../assets/genius.webp";
 import chinaCasting from "../../assets/chinacasting.webp";
 import explicit from "../../assets/explicit.webp";
 import upsc from "../../assets/upsc.webp";
+import alpha from "../../assets/alphaaTechh.webp"
 
 
 import type { Swiper as SwiperType } from "swiper";
@@ -37,6 +38,7 @@ const projects: Project[] = [
   { id: 2, name: "Awards Channelier", tags: ["HTML", "CSS", "Bootstrap", "JS", "React.JS" ], image: awards, liveUrl: "https://awards.channelier.com/" },
   { id: 3, name: "Arachnomesh Technologies Pvt Ltd", tags: ["HTML", "CSS", "JS", "Next.JS"], image: arachnomesh, liveUrl: "https://www.arachnomesh.com/" },
   { id: 4, name: "Rudra Creations", tags: ["HTML", "CSS", "Bootstrap"], image: rudra, liveUrl: "https://www.rudracreations.in/" },
+  { id: 17, name: "Alphaa Techh", tags: ["HTML", "CSS", "Reactjs", "Tailwind Css"], image: alpha, liveUrl: "https://alphaatechh.com/" },
   { id: 5, name: "Fabrication Bazaar", tags: ["HTML", "CSS", "JS", "React-Bootstrap", "React.JS"], image: fabrication, liveUrl: "https://fb.arachnomesh.com/" },
   { id: 6, name: "Seller Channelier", tags: ["HTML", "CSS", "JS" ,"React-Bootstrap", "MUI", "React.JS"], image: seller, liveUrl: "https://sellers.channelier.com/" },
   { id: 7, name: "Swiss Kombucha Company", tags: ["HTML", "CSS", "JS", "Bootstrap"], image: swiss, liveUrl: "https://swisskombuchacompany.ch/" },
