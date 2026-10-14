@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kumar-ravi.netlify.app/sitemap.xml
