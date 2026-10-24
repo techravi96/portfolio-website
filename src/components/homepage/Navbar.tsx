@@ -18,20 +18,49 @@ export default function Navbar() {
         RK.
       </a>
 
-      {/* Desktop Nav Links */}
-      <ul className="hidden md:flex items-center gap-8">
-        {navLinks.map((link) => (
-          <li key={link}>
-            <a
-              href={`#${link.toLowerCase()}`}
-              className="text-white/60 hover:text-white text-[11px] tracking-[0.18em] font-medium transition-colors duration-200"
-              style={{ fontFamily: "'Space Mono', monospace" }}
-            >
-              {link}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {/* Desktop Nav Links & Download CV */}
+      <div className="hidden md:flex items-center gap-8">
+        <ul className="flex items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link}>
+              <a
+                href={`#${link.toLowerCase()}`}
+                className="text-white/60 hover:text-white text-[11px] tracking-[0.18em] font-medium transition-colors duration-200"
+                style={{ fontFamily: "'Space Mono', monospace" }}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Download CV Button */}
+        <a
+          href="https://drive.google.com/file/d/18GHN2dhm_V5syW6D8qwLsg0EgcXcN-to/view?usp=sharing"
+          download="Ravi_Kumar_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 border border-[#00D4FF] text-[#00D4FF] hover:bg-[#00D4FF] hover:text-black text-[11px] tracking-[0.18em] font-medium px-4 py-2 transition-all duration-300 font-mono active:scale-95 group"
+          style={{ fontFamily: "'Space Mono', monospace" }}
+        >
+          <span>DOWNLOAD CV</span>
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="group-hover:translate-y-[1px] transition-transform duration-200"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        </a>
+      </div>
 
       {/* Mobile Hamburger */}
       <button
@@ -70,6 +99,33 @@ export default function Navbar() {
               {link}
             </a>
           ))}
+
+          {/* Mobile Download CV Button */}
+          <a
+            href="/assets/ravi_kumar-resume.pdf"
+            download="Ravi_Kumar_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="inline-flex items-center justify-center gap-2 border border-[#00D4FF] text-[#00D4FF] hover:bg-[#00D4FF] hover:text-black text-xs tracking-[0.18em] font-medium px-4 py-3 transition-all duration-300 font-mono active:scale-95 mt-2"
+            style={{ fontFamily: "'Space Mono', monospace" }}
+          >
+            <span>DOWNLOAD CV</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
         </div>
       )}
     </nav>
