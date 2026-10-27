@@ -68,7 +68,7 @@ export default function Banner() {
           <p
             className="text-white/55 text-[15px] font-body md:text-base leading-relaxed max-w-[460px]"
           >
-        Crafting pixel-perfect, responsive UIs for 5+ years — from designs, mockups & wireframes to
+        Crafting pixel-perfect, responsive UIs for 7+ years — from designs, mockups & wireframes to
          production-ready React, Next.js & Angular apps. I build fast, accessible, cross-browser 
          interfaces that look great and perform even better.
           </p>
@@ -157,7 +157,7 @@ export default function Banner() {
               <div
                 className="text-3xl font-semibold tracking-[0.18em] leading-none font-display"
               >
-                5+
+                7+
               </div>
               <div
                 className="text-[10px] tracking-[0.18em] font-mono mt-1 opacity-40"
