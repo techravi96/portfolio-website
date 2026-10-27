@@ -7,13 +7,13 @@ import { FaBriefcase } from "react-icons/fa";
 
 const tags = [  
   { label: "Noida/Delhi NCR", icon: <FaMapPin className="text-[#00D4FF]" /> },
-  { label: " 5+ Years Exp.", icon: <FaBriefcase className="text-[#00D4FF]" /> },
+  { label: " 7+ Years Exp.", icon: <FaBriefcase className="text-[#00D4FF]" /> },
   { label: "Responsive Design", icon: <FaMobileAlt className="text-[#00D4FF]" /> },
 ];
 
 const stats = [
   { value: "50+", label: "Projects Done" },
-  { value: "5+", label: "Years Exp." },
+  { value: "7+", label: "Years Exp." },
   { value: "3", label: "Companies" },
 ];
 
@@ -130,7 +130,7 @@ export default function About() {
                   <span className="text-white font-semibold">
                     Web Designer & UI Developer
                   </span>{" "}
-                  with 5+ years of experience in Angular, React, Next.js and modern UI development.
+                  with 7+ years of experience in Angular, React, Next.js and modern UI development.
                 </p>
                 <p className="text-white/60 text-base leading-relaxed font-body">
                   I build pixel-perfect, responsive interfaces from Figma designs, optimize performance{" "}
