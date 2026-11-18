@@ -85,14 +85,20 @@ export default function Experience() {
           <p className="text-[#00D4FF] text-xs tracking-[0.3em] font-semibold mb-3 font-mono">
             CAREER JOURNEY
           </p>
-          <div className="leading-none font-display">
-            <h2 className="text-white" style={{ fontSize: "clamp(60px, 6vw, 90px)" }}>
+          <h2 className="leading-none font-display">
+            <span
+              className="block text-white"
+              style={{ fontSize: "clamp(60px, 6vw, 90px)" }}
+            >
               PROFESSIONAL
-            </h2>
-            <h2 className="text-white/10" style={{ fontSize: "clamp(60px, 6vw, 90px)" }}>
+            </span>
+            <span
+              className="block text-white/10"
+              style={{ fontSize: "clamp(60px, 6vw, 90px)" }}
+            >
               EXPERIENCE
-            </h2>
-          </div>
+            </span>
+          </h2>
         </motion.div>
 
         {/* Timeline */}

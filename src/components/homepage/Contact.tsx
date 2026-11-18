@@ -158,20 +158,20 @@ export default function Contact() {
                 <p className="text-[#00D4FF] text-xs tracking-[0.3em] mb-3 font-mono">
                   GET IN TOUCH
                 </p>
-                <div className="leading-none font-display  tracking-tight">
-                  <h2
-                    className="text-white"
+                <h2 className="leading-none font-display tracking-tight">
+                  <span
+                    className="block text-white"
                     style={{ fontSize: "clamp(42px, 6vw, 90px)" }}
                   >
-                    LET'S WORK
-                  </h2>
-                  <h2
-                    className="text-white/10"
+                    LET&apos;S WORK
+                  </span>
+                  <span
+                    className="block text-white/10"
                     style={{ fontSize: "clamp(42px, 6vw, 90px)" }}
                   >
                     TOGETHER
-                  </h2>
-                </div>
+                  </span>
+                </h2>
               </motion.div>
 
               {/* Bio */}
@@ -282,7 +282,7 @@ export default function Contact() {
 
                 {/* CTA button */}
                 <a
-                  href="mailto:ravikunal007@gmail.com"
+                  href="mailto:ravikumar791042@gmail.com"
                   className="inline-flex items-center justify-between gap-4 bg-[#00D4FF] text-black font-bold text-[11px] tracking-[0.2em] px-6 py-4 font-mono hover:bg-white transition-all duration-300 group"
                 >
                   SEND ME A MESSAGE
@@ -322,18 +322,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-      {/* ── Footer ── */}
-      <footer className="w-full bg-[#0a0a0a] border-t border-white/5 py-6 px-6 md:px-10 lg:px-16">
-        <div className="max-w-[1300px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-[#00D4FF] font-black text-xl font-display">
-            RK.
-          </span>
-          <p className="text-white/20 text-xs font-mono tracking-[0.15em]">
-            © {new Date().getFullYear()} Ravi Kumar. ALL RIGHTS RESERVED.
-          </p>
-        </div>
-      </footer>
 
       {/* ── Floating buttons ── */}
 

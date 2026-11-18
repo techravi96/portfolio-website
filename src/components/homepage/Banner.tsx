@@ -20,7 +20,7 @@ export default function Banner() {
   return (
     <section
       className="relative w-full min-h-screen bg-[#0a0a0a] pt-[80px] overflow-hidden flex items-center"
-      id="about"
+      id="home"
     >
       <div className="relative z-10 w-full max-w-[1300px] mx-auto px-6 md:px-10 lg:px-16 py-2 md:py-2 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center">
 
@@ -40,22 +40,18 @@ export default function Banner() {
           </div>
 
           {/* Name */}
-          <div className="flex flex-col leading-none">
-            <h1
-              className="text-[#00D4FF] text-[clamp(72px,12vw,9rem)] font-display leading-none tracking-tight"
-            >
-              RAVI
-            </h1>
-            <h1
-              className="text-white text-[clamp(72px,12vw,9rem)] font-display leading-none tracking-tight"
+          <h1 className="flex flex-col leading-none text-[clamp(72px,12vw,9rem)] font-display tracking-tight">
+            <span className="text-[#00D4FF] leading-none">RAVI</span>
+            <span
+              className="text-white leading-none"
               style={{
                 WebkitTextStroke: "1.5px rgba(255,255,255,0.6)",
                 WebkitTextFillColor: "transparent",
               }}
             >
               KUMAR
-            </h1>
-          </div>
+            </span>
+          </h1>
 
           {/* Role */}
           <p
@@ -75,19 +71,17 @@ export default function Banner() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mt-2">
-            <a href="#portfolio">
-                <button
-              className="bg-[#00D4FF] text-black font-thin font-mono text-[11px]  tracking-[0.3em] px-7 py-4 hover:bg-[#ffffff] active:scale-95 transition-all duration-200"
+            <a
+              href="#portfolio"
+              className="inline-block bg-[#00D4FF] text-black font-thin font-mono text-[11px] tracking-[0.3em] px-7 py-4 hover:bg-[#ffffff] active:scale-95 transition-all duration-200"
             >
               VIEW PORTFOLIO
-            </button>
             </a>
-            <a href="#contact">
-            <button
-              className="border border-white/30 text-white font-mono font-thin text-[11px] tracking-[0.3em] px-7 py-4 hover:bg-[#ffffff] hover:text-[#000000] active:scale-95 transition-all duration-200 bg-transparent"
+            <a
+              href="#contact"
+              className="inline-block border border-white/30 text-white font-mono font-thin text-[11px] tracking-[0.3em] px-7 py-4 hover:bg-[#ffffff] hover:text-[#000000] active:scale-95 transition-all duration-200 bg-transparent"
             >
               LET&apos;S CONNECT
-            </button>
             </a>
           </div>
         </div>
