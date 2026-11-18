@@ -8,7 +8,10 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#0a0a0a] border-b border-white/5 px-6 md:px-10 py-5 flex items-center justify-between fixed top-0 left-0 z-50">
+    <nav
+      aria-label="Primary navigation"
+      className="w-full bg-[#0a0a0a] border-b border-white/5 px-6 md:px-10 py-5 flex items-center justify-between fixed top-0 left-0 z-50"
+    >
       {/* Logo */}
       <a
         href="#"

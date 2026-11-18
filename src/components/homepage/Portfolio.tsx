@@ -145,14 +145,20 @@ export default function Portfolio() {
             <p className="text-[#00D4FF] text-xs tracking-[0.3em] font-semibold mb-3 font-mono">
               SELECTED WORK
             </p>
-            <div className="leading-none font-display tracking-[2px]">
-              <h2 className="text-white" style={{ fontSize: "clamp(40px, 6vw, 90px" }}>
+            <h2 className="leading-none font-display tracking-[2px]">
+              <span
+                className="block text-white"
+                style={{ fontSize: "clamp(40px, 6vw, 90px)" }}
+              >
                 PORTFOLIO
-              </h2>
-              <h2 className="text-white/10" style={{ fontSize: "clamp(40px, 6vw, 90px" }}>
+              </span>
+              <span
+                className="block text-white/10"
+                style={{ fontSize: "clamp(40px, 6vw, 90px)" }}
+              >
                 GALLERY
-              </h2>
-            </div>
+              </span>
+            </h2>
           </motion.div>
 
           {/* Main Swiper */}
@@ -226,6 +232,8 @@ export default function Portfolio() {
             {/* Controls */}
             <div className="flex items-center gap-5 mt-10">
               <button
+                type="button"
+                aria-label="Previous project"
                 onClick={() => mainSwiper?.slidePrev()}
                 disabled={isBeginning}
                 className="w-12 h-12 flex items-center justify-center border border-white/20 text-white/50 hover:border-[#00D4FF] hover:text-[#00D4FF] disabled:opacity-20 disabled:cursor-not-allowed transition-all duration-200"
@@ -233,6 +241,8 @@ export default function Portfolio() {
                 <ArrowLeft />
               </button>
               <button
+                type="button"
+                aria-label="Next project"
                 onClick={() => mainSwiper?.slideNext()}
                 disabled={isEnd}
                 className="w-12 h-12 flex items-center justify-center bg-[#00D4FF] text-black hover:bg-white disabled:opacity-20 disabled:cursor-not-allowed transition-all duration-200"
@@ -243,9 +253,12 @@ export default function Portfolio() {
                 {String(mainActiveIndex + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
               </span>
               <div className="flex gap-2 ml-auto">
-                {projects.map((_, i) => (
+                {projects.map((project, i) => (
                   <button
-                    key={i}
+                    key={project.id}
+                    type="button"
+                    aria-label={`Go to project ${i + 1}: ${project.name}`}
+                    aria-current={i === mainActiveIndex ? "true" : undefined}
                     onClick={() => mainSwiper?.slideTo(i)}
                     className={`h-px transition-all duration-300 ${i === mainActiveIndex ? "w-8 bg-[#00D4FF]" : "w-4 bg-white/20 hover:bg-white/40"}`}
                   />
@@ -304,6 +317,8 @@ export default function Portfolio() {
                     LIVE SITE ↗
                   </a>
                   <button
+                    type="button"
+                    aria-label="Close project preview"
                     onClick={closeModal}
                     className="w-8 h-8 flex items-center justify-center border border-white/20 text-white/50 hover:border-white hover:text-white transition-all duration-200"
                   >
@@ -339,6 +354,8 @@ export default function Portfolio() {
               {/* Footer nav */}
               <div className="flex items-center justify-between px-6 py-4 border-t border-white/8 shrink-0">
                 <button
+                  type="button"
+                  aria-label="Previous project"
                   onClick={modalPrev}
                   className="flex items-center gap-3 text-white/40 hover:text-white transition-colors duration-200 group"
                 >
@@ -349,9 +366,12 @@ export default function Portfolio() {
                 </button>
 
                 <div className="flex gap-1.5 items-center">
-                  {projects.map((_, i) => (
+                  {projects.map((project, i) => (
                     <button
-                      key={i}
+                      key={project.id}
+                      type="button"
+                      aria-label={`View project ${i + 1}: ${project.name}`}
+                      aria-current={i === modalActiveIndex ? "true" : undefined}
                       onClick={() => modalGoTo(i)}
                       className={`rounded-full transition-all duration-300 ${
                         i === modalActiveIndex ? "w-4 h-1.5 bg-[#00D4FF]" : "w-1.5 h-1.5 bg-white/20 hover:bg-white/40"
@@ -361,6 +381,8 @@ export default function Portfolio() {
                 </div>
 
                 <button
+                  type="button"
+                  aria-label="Next project"
                   onClick={modalNext}
                   className="flex items-center gap-3 text-white/40 hover:text-white transition-colors duration-200 group"
                 >
