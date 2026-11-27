@@ -38,8 +38,8 @@ export default function Navbar() {
         </ul>
 
         {/* Download CV Button */}
-        <a
-          href="https://drive.google.com/file/d/18GHN2dhm_V5syW6D8qwLsg0EgcXcN-to/view?usp=sharing"
+        <a 
+          href="https://drive.google.com/file/d/1k4ILOqGT94nes-hsdaMxKUnpOP4gLqe4/view?usp=drive_link"
           download="Ravi_Kumar_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
